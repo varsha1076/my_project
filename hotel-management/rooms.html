@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rooms — My Hotel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="brand">🌙 My Hotel</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="rooms.html" class="active">Rooms</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Our Rooms</h2>
+    <div class="room-grid">
+      <article class="room-card">
+        <img src="images/room1.jpg" alt="Deluxe Room" />
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p>Comfortable room with queen bed, AC, TV.</p>
+          <div class="price">₹ 3,000 / night</div>
+          <a class="btn" href="booking.html?room=Deluxe">Book</a>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <img src="images/room2.jpg" alt="Suite" />
+        <div class="room-info">
+          <h3>Suite</h3>
+          <p>Spacious suite with living area and king bed.</p>
+          <div class="price">₹ 6,000 / night</div>
+          <a class="btn" href="booking.html?room=Suite">Book</a>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <img src="images/room3.jpg" alt="Standard Room" />
+        <div class="room-info">
+          <h3>Standard Room</h3>
+          <p>Cozy and budget friendly room.</p>
+          <div class="price">₹ 2,000 / night</div>
+          <a class="btn" href="booking.html?room=Standard">Book</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="yearRooms"></span> My Hotel — All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

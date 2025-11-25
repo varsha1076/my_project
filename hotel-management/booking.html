@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking — My Hotel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="brand">🌙 My Hotel</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h2>Book Your Stay</h2>
+
+    <form id="bookingForm" class="booking-form">
+      <label>Full Name
+        <input type="text" id="guestName" required />
+      </label>
+
+      <label>Email
+        <input type="email" id="guestEmail" required />
+      </label>
+
+      <label>Room Type
+        <select id="roomType">
+          <option value="Deluxe">Deluxe — ₹3000/night</option>
+          <option value="Suite">Suite — ₹6000/night</option>
+          <option value="Standard">Standard — ₹2000/night</option>
+        </select>
+      </label>
+
+      <label>Check-in
+        <input type="date" id="checkin" required />
+      </label>
+
+      <label>Check-out
+        <input type="date" id="checkout" required />
+      </label>
+
+      <div class="price-row">
+        <div>Price per night: <strong id="pricePerNight">₹ 3,000</strong></div>
+        <div>Total nights: <strong id="nights">0</strong></div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Confirm Booking</button>
+        <button class="btn outline" type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Confirmation modal -->
+  <div id="confirmModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Booking Confirmed!</h3>
+      <p id="confirmText"></p>
+      <button class="btn" id="closeModal">OK</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>© <span id="yearBook"></span> My Hotel — All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

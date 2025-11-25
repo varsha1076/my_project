@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — My Hotel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="brand">🌙 My Hotel</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h2>Login</h2>
+    <form class="booking-form" onsubmit="alert('This demo has no backend. Use booking page to simulate.'); return false;">
+      <label>Email<input type="email" required></label>
+      <label>Password<input type="password" required></label>
+      <div class="form-actions">
+        <button class="btn">Login</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="yearLogin"></span> My Hotel — All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

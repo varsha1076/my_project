@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — My Hotel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="brand">🌙 My Hotel</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h2>Contact Us</h2>
+    <p>Address: 123 Hotel Road, City, State</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Email: info@myhotel.com</p>
+
+    <h3>Send a message</h3>
+    <form class="booking-form" id="contactForm" onsubmit="alert('Message sent (demo)'); return false;">
+      <label>Name<input type="text" required></label>
+      <label>Email<input type="email" required></label>
+      <label>Message<textarea rows="4" required></textarea></label>
+      <div class="form-actions">
+        <button class="btn">Send</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer contact-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>My Hotel</h4>
+        <p>Comfort, service and warm hospitality.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="rooms.html">Rooms</a><br/>
+        <a href="booking.html">Booking</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div>+91 98765 43210</div>
+        <div>info@myhotel.com</div>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="yearContact"></span> My Hotel — All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
