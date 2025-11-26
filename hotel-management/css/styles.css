@@ -8,7 +8,7 @@
 }
 
 body.light{
-  background: linear-gradient(180deg,#f8fafc,#eef2ff);
+  background: linear-gradient(180deg,#f8fafc,#8b9fe8);
   color:var(--text);
 }
 body.dark{
